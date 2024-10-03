@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     })
 
     ScrollReveal().reveal(".title", {
-        ...scrollRevealOption, origin: 'bottom', scale: 0.85
+        ...scrollRevealOption, origin: 'top', scale: 0.85
     })
     ScrollReveal().reveal(".imageDg", {
         ...scrollRevealOption, origin: 'left', scale: 0.5
@@ -103,11 +103,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     ScrollReveal().reveal(".Graphique", {
         ...scrollRevealOption, delay: 1500
     })
-
-
-
-
-
-
 
 })

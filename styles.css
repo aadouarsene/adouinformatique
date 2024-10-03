@@ -32,7 +32,8 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 3rem;
-    background-color: var(--white);
+    background-color: var(--black);
+    color: var(--white);
     position: fixed;
     width: 100%;
     padding: 0.5rem;
@@ -45,7 +46,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: var(--grayDark);
+    color: var(--white);
     height: 100%;
 }
 
@@ -66,7 +67,7 @@ header {
 
 .menu_nav a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
     font-size: 1.2rem;
 }
 
