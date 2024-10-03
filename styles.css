@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Lemon milk';
+    src: url('lemon_milk/LEMONMILK-Regular.otf');
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway';
+}
+
+:root {
+    --blue : #1f6bc4 ;
+    --grayDark : #4d4d4d;
+    --grayLight: #797979;
+    --grayLightness: #e4e2e250;
+    --white: #ffffff;
+    --black: #000;
+    --max-width: 75rem;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+} 
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--grayDark);
+    height: 100%;
+}
+
+.logo {
+    width: 12.5rem;
+}
+
+.monlogo {
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu_nav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu_nav a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+.darkMode {
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.darkModeBlack {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+main {
+
+    width: 100%;
+
+}
+
+.imageAccueil {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/background1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main .container {
+    padding: 0 .5rem;
+    width: 100%;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.imageAccueil h1 {
+    width: 100%;
+    font-family: 'Lemon milk';
+    font-size: 4rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.imageAccueil h1 span {
+    font-family: 'Lemon milk';
+    color: var(--blue);
+    background-color: var(--white) ;
+    padding: 0 0.4rem;
+}
+
+.arrowCta ion-icon {
+    color: var(--white);
+    font-size: 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.ctabtn {
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    width: 15rem;
+    height: 3rem;
+    padding: .5rem 0;
+    font-family: 'raleway';
+    border-radius: 3.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: all 1s ;
+}
+
+.ctabtn:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.title {
+    font-family: 'raleway';
+    text-align: center;
+    color: var(--grayDark);
+
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+hr {
+    width: 10rem;
+    height: .3rem;
+    background-color: var(--blue);
+    margin: 1rem auto;
+    border: none;
+    border-radius: 3.2rem;
+}
+
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grayLightness);
+    color: var(--black);
+}
+
+.presentationContent {
+    text-align: center;
+}
+
+.imageDg {
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+
+}
+
+.imageDg img {
+    border-radius: 100%;
+    width: 100%;
+    box-shadow: 10px -3px 4px var(--grayLight);
+}
+
+.nomDg {
+    text-align: center;
+}
+
+.statistique {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/keyboard-70506_1280.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    color: var(--white);
+    justify-items: center;
+    align-items: center;
+    line-height: normal;
+    margin: 1rem 0;
+}
+
+.statistique span {
+    font-size: 4rem;
+    font-family: 'raleway';
+    position: relative;
+}
+
+.statistique span::after {
+    content: "F/Page";
+    position: absolute;
+    font-size: 1rem;
+    top: 8px;
+
+}
+.statistique div p {
+    font-size: 1.2rem;
+    font-family: 'raleway';
+    width: 100%;
+    padding: .3rem;
+    border-radius: 50px;
+}
+
+.statistique div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: .3rem;
+}
+
+sup {
+    font-size: 1rem;
+}
+
+.Nosprestations {
+    background-color: var(--grayLightness);
+    color: var(--grayDark);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: .5rem;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem ;
+    width: 100%;
+    height: 100%;
+}
+
+.prestationContent {
+    width: 100%;
+}
+
+.prestationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.bureautique,
+.Formations,
+.Devweb,
+.Graphique {
+    width: 270px;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.Nosprestations h4 {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+.Nosprestations h4 ion-icon {
+    color: var(--blue);
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.mes_realisations {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--grayLightness);
+    padding: 1rem;
+}
+
+/* .realisationContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.realisationContent div {
+    width: 300px;
+} */
+
+/* .realisationContent div img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+} */
+
+/* .affiche {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affiche::after {
+    content: "+";
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 5px;
+    inset: 0;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.affiche:hover::after {
+    opacity: 1;
+    inset: 10px;
+} */
+
+.logoPartenairesContent {
+    background-color: var(--grayLightness);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2.5rem;
+}
+
+.logoPartenairesContent div {
+    width: 150px ;
+
+}
+
+.logoPartenairesContent div img {
+ width: 100%;
+}
+
+
+    swiper-container .realisations_img {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .realisations_img swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .realisations_img swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+
+
+    swiper-container .temoignages{
+        width: 100%;
+        height: 100%;
+        background-color: var(--grayLightness);
+      }
+
+      .temoignages swiper-slide {
+        background: #fff;
+        display: flex;
+        line-height: normal;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        height: 250px;
+
+      }
+
+      .temoignages swiper-slide .textSlide {
+        width: 700px;
+        border-radius: 20px;
+        box-shadow: 0 0 7px rgba(0,0,0,0.3);
+        padding: 1rem;
+        line-height: 1.6;
+      }
+
+      .temoignages swiper-slide img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
+    
+      }
