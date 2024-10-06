@@ -7,24 +7,24 @@ const header = document.querySelector('header')
 
 window.addEventListener('DOMContentLoaded', (event) => {
 
-    darkMode.addEventListener('click', () => {
-        const moon = darkLight.getAttribute('name')
-        const lien = document.querySelectorAll('a')
-        if (moon === 'moon') {
-            darkLight.setAttribute('name', 'moon-outline')
-            darkLight.style.color = 'white'
-            body.classList.add('darkModeBlack')
-            header.classList.add('darkModeBlack')
-            lien.forEach(a => a.style.color = 'white')
-        }
-        if (moon === 'moon-outline') {
-            darkLight.setAttribute('name', 'moon')
-            darkLight.style.color = 'black'
-            body.classList.remove('darkModeBlack')
-            header.classList.remove('darkModeBlack')
-            lien.forEach(a => a.style.color = 'black')
-        }
-    })
+    // darkMode.addEventListener('click', () => {
+    //     const moon = darkLight.getAttribute('name')
+    //     const lien = document.querySelectorAll('a')
+    //     if (moon === 'moon') {
+    //         darkLight.setAttribute('name', 'moon-outline')
+    //         darkLight.style.color = 'white'
+    //         body.classList.add('darkModeBlack')
+    //         header.classList.add('darkModeBlack')
+    //         lien.forEach(a => a.style.color = 'white')
+    //     }
+    //     if (moon === 'moon-outline') {
+    //         darkLight.setAttribute('name', 'moon')
+    //         darkLight.style.color = 'black'
+    //         body.classList.remove('darkModeBlack')
+    //         header.classList.remove('darkModeBlack')
+    //         lien.forEach(a => a.style.color = 'black')
+    //     }
+    // })
 
     const scrollRevealOption = {
         distance: "75px",
@@ -48,6 +48,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     ScrollReveal().reveal(".logoCpcss", {
         ...scrollRevealOption, delay: 1500
+    })
+    ScrollReveal().reveal(".logoiese", {
+        ...scrollRevealOption, delay: 2000
     })
 
     ScrollReveal().reveal(".imageAccueil h1", {

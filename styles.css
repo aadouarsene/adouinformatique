@@ -8,7 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'raleway';
+    font-family: 'montserrat';
 }
 
 :root {
@@ -68,7 +68,7 @@ header {
 .menu_nav a {
     text-decoration: none;
     color: var(--white);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .darkMode {
@@ -84,28 +84,29 @@ header {
     color: var(--white);
 }
 
-main {
-
-    width: 100%;
-
-}
 
 .imageAccueil {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/background1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/background1.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100dvh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    line-height: 2;
+    position: relative;
+}
+
+.imageAccueilContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    max-width: 700px;
+    margin-left: 100px;
 }
 
 main .container {
-    padding: 0 .5rem;
     width: 100%;
     line-height: 2;
     font-size: 1.2rem;
@@ -113,50 +114,73 @@ main .container {
 
 .imageAccueil h1 {
     width: 100%;
-    font-family: 'Lemon milk';
-    font-size: 4rem;
-    color: var(--white);
-    text-align: center;
+    font-family: 'poppins';
+    font-size: 3.5rem;
 }
 
-.imageAccueil h1 span {
-    font-family: 'Lemon milk';
-    color: var(--blue);
-    background-color: var(--white) ;
-    padding: 0 0.4rem;
+.imageAccueil h3 {
+    text-transform: uppercase;
+    text-align: left;
+
 }
 
-.arrowCta ion-icon {
-    color: var(--white);
-    font-size: 3rem;
-    margin-top: 2rem;
-    cursor: pointer;
+.imageAccueilContent p {
+    font-size: 1rem;
 }
 
-.ctabtn {
+.imageAccueil button {
+    width: 200px;
+    height: 50px;
+    margin-left: 100px;
+    font-size: 1rem;
     background-color: var(--blue);
     color: var(--white);
-    font-weight: 600;
-    width: 15rem;
-    height: 3rem;
-    padding: .5rem 0;
-    font-family: 'raleway';
-    border-radius: 3.2rem;
-    font-size: 1.2rem;
-    cursor: pointer;
     border: none;
-    transition: all 1s ;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+    font-weight: 500;
 }
 
-.ctabtn:hover {
-    background-color: var(--white);
+.imageAccueil button:hover {
     color: var(--blue);
-    
+    background-color: var(--white);
 }
+
+.imageAccueil button:hover a{
+    color: var(--blue);
+}
+
+
+
+.imageAccueil button a {
+text-decoration: none;
+color: var(--white);
+}
+
+.accueilClient {
+    min-height: 100%;
+
+}
+
+.accueilClient img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+
+}
+
+
 
 main {
     display: flex;
+    align-items: center;
     justify-content: center;
+    min-width: var(--max-width);
+    margin: 0 auto;
 }
 
 
@@ -164,18 +188,16 @@ main {
     font-family: 'raleway';
     text-align: center;
     color: var(--grayDark);
-
-    height: 250px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 hr {
     width: 10rem;
-    height: .3rem;
+    height: .2rem;
     background-color: var(--blue);
     margin: 1rem auto;
     border: none;
@@ -187,31 +209,33 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--grayLightness);
     color: var(--black);
+    padding: 1rem;
 }
 
 .presentationContent {
-    text-align: center;
+    display: flex;
+
+}
+
+.presentationContent p {
+    margin-right: 10px;
 }
 
 .imageDg {
     margin-top: 2rem;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-
-
+    width: 500px;
+    height: 500px;
 }
 
 .imageDg img {
-    border-radius: 100%;
-    width: 100%;
-    box-shadow: 10px -3px 4px var(--grayLight);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
 }
 
 .nomDg {
     text-align: center;
+    line-height: 1.5;
 }
 
 .statistique {
@@ -270,7 +294,7 @@ sup {
     gap: .5rem;
     justify-content: center;
     align-content: center;
-    padding: 1rem ;
+    padding: 2rem ;
     width: 100%;
     height: 100%;
 }
@@ -284,7 +308,7 @@ sup {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 400px;
+    min-height: 100%;
 }
 
 .bureautique,
