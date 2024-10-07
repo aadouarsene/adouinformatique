@@ -328,13 +328,14 @@ sup {
 
     color: var(--black);
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 270px);
     gap: .5rem;
     justify-content: center;
     align-content: center;
-    padding: 2rem ;
+    justify-items: center;
     width: 100%;
-    height: 100%;
+
+
 }
 
 .prestationContent {
@@ -353,26 +354,37 @@ sup {
 
 .imageFormations {
     background: url('images/software-developer-6521720_640.jpg');
+
 }
 
 .bureautique,
 .Formations,
 .Devweb,
 .Graphique {
-    width: 240px;
+    width: 270px;
     padding: .5rem;
     border-radius: 10px;
     background-color: var(--white);
     box-shadow: 0 0 7px rgba(0,0,0,0.3);
     text-align: center;
+    transition: all 1s;
 }
+.prestationBloc:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.prestationBloc:hover h4 ion-icon {
+    color: var(--white);
+}
+
 
 .Nosprestations h4 {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    color: var(--black);
+
 }
 
 .Nosprestations h4 ion-icon {
@@ -386,7 +398,7 @@ ul {
 .mes_realisations {
     width: 100%;
     margin: 0 auto;
-    background-color: var(--grayLightness);
+
     padding: 1rem;
 }
 
@@ -438,7 +450,7 @@ ul {
 } */
 
 .logoPartenairesContent {
-    background-color: var(--grayLightness);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,4 +521,102 @@ ul {
         border-radius: 50%;
         box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
     
+      }
+
+      .nosInfos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+
+      }
+
+      .infosClients {
+        width: 100%;
+      }
+
+      .nosInfos div {
+        display: flex;
+        align-items: center;
+
+        gap: 1rem;
+      }
+
+      .nosInfos div ion-icon {
+        font-size: 1.1rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: var(--blue);
+        border: 1px dashed var(--blue);
+        padding: .4rem;
+      }
+
+      .contactBloc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1.1rem;
+        max-width: var(--max-width);
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .formulaireClient {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .infoBloc1 {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .infoBloc1 div, .messageZone {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .infoBloc1 input {
+        width: 260px;
+        height: 40px;
+        outline: none;
+        padding: 0 .3rem;
+      }
+
+      textarea {
+        height: 100px;
+        padding: .3rem;
+        resize: none;
+        outline: none;
+      }
+
+      form button {
+        height: 40px;
+        font-size: 1rem;
+        background-color: var(--blue);
+        color: var(--white);
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+
+
+      footer {
+        height: 50px;
+        background-color: var(--black);
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }

@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         ...scrollRevealOption, delay: 500
     })
 
-    ScrollReveal().reveal(".infoLogo", {
+    ScrollReveal().reveal(".logobazre", {
         ...scrollRevealOption, delay: 1000
     })
 

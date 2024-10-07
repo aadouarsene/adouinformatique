@@ -18,8 +18,8 @@
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#quisommesnous">Qui sommes-nous ?</a></li>
                     <li><a href="#nosprestations">Nos Prestations</a></li>
-                    <li><a href="#quisommesnous">Tarifs</a></li>
-                    <li><a href="#quisommesnous">Réalisations</a></li>
+                    <li><a href="#tarifs">Tarifs</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
                     <li><a href="#contact">Contacts</a></li>
                 </ul>
             </nav>
@@ -85,7 +85,7 @@
             </h2>
             <div class="prestationContainer ">
                 <div class="Nosprestations">
-                    <div class="bureautique ">
+                    <div class="bureautique prestationBloc">
                         <h4> <ion-icon name="checkmark-circle"></ion-icon>Bureautique</h4>
                         <p class="prestationContent">
                         Impression,
@@ -97,7 +97,7 @@
                         </p>
                     </div>
     
-                    <div class="Formations">
+                    <div class="Formations prestationBloc">
                         <h4><ion-icon name="checkmark-circle"></ion-icon>Formations</h4>
                         <p class="prestationContent">
                         Word, Excel,
@@ -107,7 +107,7 @@
                         </p>
                     </div>
     
-                    <div class="Devweb">
+                    <div class="Devweb prestationBloc">
                         <h4><ion-icon name="checkmark-circle"></ion-icon>Developpement web</h4>
                         <p class="prestationContent">
                             Conception de site web, 
@@ -115,14 +115,14 @@
                         </p>
                     </div>
     
-                    <div class="Graphique">
+                    <div class="Graphique prestationBloc">
                         <h4><ion-icon name="checkmark-circle"></ion-icon>Design Graphic</h4>
                         <p class="prestationContent">Flyer, Bâche numérique, Kakemono</p>
                     </div>
                 </div>
             </div>
 
-            <h2 class="title">
+            <h2 class="title" id="tarifs">
                 Quelques Tarifs
                 <hr>
             </h2>
@@ -133,7 +133,7 @@
                 <div class="saisie"> <span>300</span><p>Saisie de texte</p> </div>
             </div>
 
-            <h2 class="title">
+            <h2 class="title" id="realisations">
                 Quelques réalisations...
                 <hr>
             </h2>
@@ -196,8 +196,8 @@
                     <div class="logo_cmby">
                         <img src="realisations/LOGO_CMBY.jpg" alt="CMBY">
                     </div>
-                    <div class="infoLogo">
-                        <img src="Logo/logo.png" alt="adouinformatique">
+                    <div class="logobazre">
+                        <img src="realisations/logoBazre.jpg" alt="bazre">
                     </div>
                     <div class="logoCpcss">
                         <img src="realisations/cpcss.png" alt="cpcss">
@@ -205,6 +205,7 @@
                     <div class="logoiese">
                         <img src="realisations/logoiese.png" alt="iese">
                     </div>
+
                 </div>
             </div>
 
@@ -268,15 +269,50 @@
 
           </swiper-container>
 
-
-
-
             <h2 class="title" id="contact">
                 Nous contacter
                 <hr>
             </h2>
+            <div class="contactBloc">
+                <div class="nosInfos">
+                    <div class="telephone">
+                        <ion-icon name="call"></ion-icon> <p>(+225) 07 09 61 89 56 / 01 00 31 29 34</p>
+                    </div>
+                    <div class="whatsapp">
+                        <ion-icon name="logo-whatsapp"></ion-icon> <p>07 09 61 89 56</p>
+                    </div>
+                    <div class="email">
+                        <ion-icon name="mail"></ion-icon> <p>adouinformatique@gmail.com</p>
+                    </div>
+                    <div class="localisation">
+                        <ion-icon name="location"></ion-icon> <p>Yamoussoukro, 220 Lgts en face de la Cité Blanche</p>
+                    </div>
+                </div>
+                <div class="infosClients">
+                    <form action="#" class="formulaireClient">
+                        <div class="infoBloc1">
+                            <div class="nomClient">
+                                <label for="nom">Nom et Prénoms</label>
+                                <input type="text" id="nom" placeholder="Nom et prenoms">
+                            </div>
+                            <div class="emailClient">
+                                <label for="email">Email</label>
+                                <input type="email" id="emai" placeholder="votre email">
+                            </div>
+                        </div>
+                        <div class="messageZone">
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <button type="submit">Soumettre</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <p>&copy; Copyright 2024 - Développé par ADOU A. Arsène</p>
+    </footer>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
