@@ -333,7 +333,8 @@ sup {
     justify-content: center;
     align-content: center;
     justify-items: center;
-    width: 100%;
+    width: var(--max-width);
+    margin: 0 auto;
 
 
 }
@@ -555,10 +556,12 @@ ul {
       .contactBloc {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
         align-items: center;
         padding: 1rem;
         font-size: 1.1rem;
         max-width: var(--max-width);
+        margin: auto;
         gap: 1rem;
         margin-bottom: 2rem;
       }
